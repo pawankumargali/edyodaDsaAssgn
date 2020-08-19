@@ -61,31 +61,22 @@ class Stack  {
 }
 
 
+function performOps(n, cmds) {
+    const stack = new Stack();
+    for(let i=0; i<n; i++) {
+        if(cmds[i].includes("push")) {
+            const [cmd, val] = cmds[i].split(" ");
+            stack.push(val);
+        }
+        else if(cmds[i]==="pop") stack.pop();
+        else if(cmds[i]==="max") console.log(stack.getMax());
+    }
+}
+
 // Test Case
-// const stack = new Stack();
-// stack.push(1);
-// stack.push(3);
-// stack.push(2);
-// stack.push(3);
-// stack.push(4);
-// stack.push(4);
-// stack.push(5);
-// stack.print();
-// console.log(stack.getMax());
-// stack.pop();
-// stack.pop();
-// stack.pop();
-// stack.print();
-// console.log(stack.getMax());
-// stack.pop();
-// stack.pop();
-// stack.print();
-// console.log(stack.getMax());
-// stack.pop();
-// stack.print();
-// stack.pop();
-// console.log(stack.getMax());
-// stack.print();
+performOps(5, ["push 2", "push 1", "max", "pop", "max"]);
+
+
 
 
 
