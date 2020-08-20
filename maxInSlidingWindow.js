@@ -21,4 +21,4 @@ function maxInSlidingWindow(n, m, nums) {
 }
 
 // Test Case
-console.log(maxInSlidingWindow(8, 4, [2,7,3,1,5,2,6,2]));
+// console.log(maxInSlidingWindow(8, 4, [2,7,3,1,5,2,6,2]));

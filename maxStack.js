@@ -74,7 +74,7 @@ function performOps(n, cmds) {
 }
 
 // Test Case
-performOps(5, ["push 2", "push 1", "max", "pop", "max"]);
+// performOps(5, ["push 2", "push 1", "max", "pop", "max"]);
 
 
 
